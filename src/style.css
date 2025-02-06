@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "game_of_squidsregular";
+  src: url("./assets/fonts/game_of_squids-webfont.woff2") format("woff2"),
+    url("./assets/fonts/game_of_squids-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  color: white;
+  font-family: "game_of_squidsregular", sans-serif;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: black;
+  padding: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  background-color: inherit;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: "game_of_squidsregular", sans-serif;
+  font-size: 24px;
+}
+
+button:hover {
+  color: #fc0a60;
+}
+
+.logo {
+  font-size: 48px;
+}
+
+#content {
+  padding: 24px;
+  flex: 1;
+}
+
+.page-title {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+#menu-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-image {
+  height: 60%;
+  width: 100%;
+}
+
+.menu-description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-text {
+  font-size: 32px;
+}
+
+#about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.about-text {
+  font-size: 18px;
+}
