@@ -1,6 +1,7 @@
 import loadHome from "./pages/home.js";
 import loadMenu from "./pages/menu.js";
 import loadAbout from "./pages/about.js";
+import loadForm from "./pages/form.js";
 
 import "./style.css";
 
@@ -13,3 +14,4 @@ menuBtn.addEventListener("click", loadMenu);
 aboutBtn.addEventListener("click", loadAbout);
 
 loadHome();
+loadForm();

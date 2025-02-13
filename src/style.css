@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
 @font-face {
   font-family: "game_of_squidsregular";
   src: url("./assets/fonts/game_of_squids-webfont.woff2") format("woff2"),
@@ -38,8 +40,94 @@ button:hover {
   color: #fc0a60;
 }
 
+dialog {
+  border: none;
+  border-radius: 24px;
+}
+
+form {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 8px;
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  padding: 8px;
+}
+
+input:valid {
+  border-color: #249f9c;
+}
+
+input:invalid {
+  border-color: #dc2626;
+}
+
 .logo {
   font-size: 48px;
+}
+
+.form-header {
+  font-family: Montserrat, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+#close-dialog {
+  background-color: #eee;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  color: #888;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 24px;
+  width: 24px;
+  padding: 0;
+}
+
+#close-dialog:hover {
+  background-color: #ccc;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-group + button {
+  background-color: black;
+  border-radius: 16px;
+  padding: 16px 32px;
+}
+
+.error {
+  background-color: #900;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: white;
+  font-family: Montserrat, sans-serif;
+  font-size: 80%;
+  padding: 0;
+  width: 100%;
+}
+
+.error.active {
+  padding: 0.4em;
 }
 
 #content {
